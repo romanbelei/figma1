@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        color: var(--color-text-black);
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -30,12 +36,12 @@
     </header>
     <main>
       <div>
-        <section>
-          <h1>Эффективные решения <br />для вашего бизнеса</h1>
-          <button>Заказать услугу</button>
+        <section class="baner">
+          <h1 class="baner-title">Эффективные решения <br />для вашего бизнеса</h1>
+          <button class="baner-buton">Заказать услугу</button>
         </section>
       </div>
-      <section>
+      <section class="descript">
         <h2>Описание</h2>
         <ul>
           <li>
@@ -60,16 +66,16 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чем мы занимаемся</h2>
+      <section class="working">
+        <h2 class="working-title">Чем мы занимаемся</h2>
         <ul>
           <li><img src="./img/img1.jpg" alt="Фото розробника для ПК" width="370" /></li>
           <li><img src="./img/img2.jpg" alt="Фото розробника моб. додатків " width="370" /></li>
           <li><img src="./img/img3.jpg" alt="Вебдизайнер" width="370" /></li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
+      <section class="comand">
+        <h2 class="comand-title">Наша команда</h2>
         <ul>
           <li>
             <figure>
@@ -114,9 +120,9 @@
       <a href="./index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
       <address>
         <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mail:info@example.com" class="link">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="link">+380991111111</a></li>
+          <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+          <li><a href="mail:info@example.com" class="footer-link">info@example.com</a></li>
+          <li><a href="tel:+380991111111" class="footer-link">+380991111111</a></li>
         </ul>
       </address>
     </footer>
