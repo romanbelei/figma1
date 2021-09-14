@@ -159,6 +159,10 @@ button:focus {
   background-color: var(--color-footer-backgr);
 }
 
+.footer > .logo {
+  color: var(--color-white);
+}
+
 .footer-link {
   text-decoration: none;
   color: var(--color-solid);
