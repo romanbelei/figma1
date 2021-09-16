@@ -8,169 +8,157 @@
   --color-footer-backgr: #2f303a;
 }
 
-/*Header*/
+body {
+  color: var(--color-text-black);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
 
-.logo {
-  text-decoration: none;
-  color: var(--color-black);
-  font-family: Raleway;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 26px;
-}
-.logo .logo-span {
-  color: var(--color-blue);
-}
-ul {
+.list {
   list-style-type: none;
 }
 
-.header .link {
+.link {
   text-decoration: none;
+}
+
+/*Header---------------------------------------------------------------*/
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+}
+.logo-black {
+  color: var(--color-black);
+}
+.logo-blue {
+  color: var(--color-blue);
+}
+.header .link {
   color: inherit;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: left;
 }
-
-.header-nav .link.current {
+.link.current {
   color: var(--color-blue);
 }
-
+.header-list .link {
+  color: var(--color-text-grey);
+}
 .header .link:hover,
 .header .link:focus {
   color: var(--color-blue);
 }
 
-/*Section baner*/
+/*Section baner----------------------------------------------------*/
 .baner-title {
-  font-size: 44px;
-  font-style: normal;
+  background-color: #2f303a;
+  color: var(--color-white);
   font-weight: 900;
-  line-height: 1.4;
+  font-size: 44px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
 }
-button {
+.baner-button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
   border: none;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
   cursor: pointer;
 }
-button:hover,
-button:focus {
-  background-color: var(--color-blue);
-  color: var(--color-white);
-}
 
-/*section descript*/
+/*section descript---------------------------------------------------*/
 
-.descript h3 {
-  font-size: 14px;
+.descript-title {
   font-style: normal;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
   text-align: left;
 }
-.descript p {
-  font-size: 14px;
+.descript-paragraf {
   line-height: 1.7;
-  letter-spacing: 0.03em;
   text-align: left;
 }
 
-/*section working*/
+/*section working----------------------------------------------------*/
 .working-title {
-  font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
 }
 
-/*section comand*/
+/*section comand-----------------------------------------------------*/
 .comand-title {
-  font-size: 36px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
 }
-.comand h3 {
-  font-size: 16px;
-  font-style: normal;
+.comand-title-name {
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.17;
   text-align: center;
 }
-.comand p {
+.comand-paragraf {
   font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.17;
   text-align: center;
 }
 
-/*Page Portfolio*/
+/*Page Portfolio+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .portfolio button {
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.63;
   text-align: center;
 }
 /*presentation*/
-.presentation h3 {
-  font-size: 18px;
-  font-style: normal;
+.presentation-title {
   font-weight: 700;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
 }
-.presentation p {
+.presentation-paragraf {
   font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+  line-height: 1.88;
   text-align: left;
   color: var(--color-text-grey);
 }
-/*footer*/
-.footer {
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  text-align: left;
-  background-color: var(--color-footer-backgr);
-}
-
-.footer > .logo {
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--color-blue);
   color: var(--color-white);
 }
-
+/*footer===================================================================*/
+.footer {
+  background-color: var(--color-footer-backgr);
+  line-height: 1.7;
+  text-align: left;
+}
+.logo-white {
+  color: var(--color-white);
+}
+address {
+  font-style: inherit;
+}
 .footer-link {
-  text-decoration: none;
   color: var(--color-solid);
+  text-decoration: none;
 }
 .footer-address {
   color: var(--color-white);
-}
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--color-blue);
 }
