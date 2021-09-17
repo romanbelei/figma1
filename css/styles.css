@@ -84,6 +84,7 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-align: left;
+  text-transform: uppercase;
 }
 .descript-paragraf {
   line-height: 1.7;
