@@ -8,10 +8,6 @@
   --color-footer-backgr: #2f303a;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   color: var(--color-text-black);
   font-family: Roboto, sans-serif;
@@ -37,13 +33,13 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 4px solid orangered;
   /*align-content: center;*/
 }
 
 /*Header---------------------------------------------------------------*/
 
 .header {
-  width: 1600px;
   outline: 2px solid springgreen;
 }
 .logo {
@@ -77,14 +73,16 @@ body {
 
 /*Section baner----------------------------------------------------*/
 .hero {
-  background-color: #2f303a;
-  margin-bottom: 94px;
 }
 .baner {
+  background-color: #2f303a;
+
+  height: 600px;
+  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 }
 .baner-title {
   color: var(--color-white);
@@ -99,6 +97,10 @@ body {
   background-color: var(--color-blue);
   color: var(--color-white);
   border: none;
+  width: 200px;
+  height: 50px;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -133,10 +135,14 @@ body {
 }
 
 /*section working----------------------------------------------------*/
+.working {
+  margin-bottom: 94px;
+  outline: 2px solid green;
+}
 .working-title {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 0;
   font-weight: 700;
   font-size: 36px;
@@ -145,13 +151,26 @@ body {
 }
 
 /*section comand-----------------------------------------------------*/
+.comand {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid blue;
+}
 .comand-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .comand-title-name {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
@@ -191,11 +210,15 @@ body {
 }
 /*footer===================================================================*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
   background-color: var(--color-footer-backgr);
   line-height: 1.7;
   text-align: left;
 }
 .logo-white {
+  margin-bottom: 20px;
   color: var(--color-white);
 }
 address {
@@ -207,4 +230,10 @@ address {
 }
 .footer-address {
   color: var(--color-white);
+}
+.footer-list:first-child {
+  margin-bottom: 6px;
+}
+.footer-list:last-child {
+  margin-top: 6px;
 }
