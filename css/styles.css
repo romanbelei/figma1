@@ -20,7 +20,6 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 body {
   color: var(--color-text-black);
   font-family: Roboto, sans-serif;
@@ -28,7 +27,18 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -40,14 +50,14 @@ body {
 }
 
 .container {
-  /*background-color: tomato;*/
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 3px solid orangered;
+  /*background-color: tomato;*/
   /*align-content: center;*/
+  /* outline: 3px solid orangered; */
 }
 .descript-item:not(:last-child),
 .comand-list-item:not(:last-child),
@@ -62,7 +72,7 @@ body {
 }
 .header-block {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
 }
 .logo {
@@ -83,6 +93,7 @@ body {
   display: flex;
   justify-content: space-between;
   min-width: 294px;
+  padding: 32px;
 }
 .header .link {
   color: inherit;
@@ -109,11 +120,9 @@ body {
 }
 
 /*Section baner----------------------------------------------------*/
-.hero {
-}
+
 .baner {
   background-color: #2f303a;
-
   height: 600px;
   margin-bottom: 94px;
   padding-top: 200px;
@@ -218,7 +227,7 @@ body {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 .comand-list {
   display: flex;
@@ -226,7 +235,12 @@ body {
 .comand-list-item {
   flex-basis: calc(100% / 4);
   justify-content: space-between;
-  outline: 2px solid orange;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
+  border-radius: 0px 0px 4px 4px;
+  /* outline: 2px solid orange; */
 }
 .comand-title {
   margin-top: 0;
@@ -239,8 +253,8 @@ body {
   text-align: center;
 }
 .comand-title-name {
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   padding-top: 0px;
   padding-bottom: 0;
   font-weight: 500;
@@ -249,6 +263,7 @@ body {
   text-align: center;
 }
 .comand-paragraf {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
@@ -261,10 +276,12 @@ body {
   outline: 2px solid green;
 }
 .portfolio-list {
-  /*height: 54px;*/
-  margin-bottom: 34px;
-  padding-left: auto;
-  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  margin: 34px;
+}
+.portfolio-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .portfolio button {
   background-color: var(--color-solid-button);
@@ -279,6 +296,22 @@ body {
   text-align: center;
 }
 /*presentation*/
+.presentation {
+  margin-top: calc(-1 * (var(--interval)));
+  margin-left: calc(-1 * (var(--interval)));
+}
+.presentation-list {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.presentation-list-item {
+  flex-basis: calc((100% / 3) - (var(--interval)));
+  border: 1px solid #eeeeee;
+  margin-top: var(--interval);
+  margin-left: var(--interval);
+  /* outline: 1px solid red; */
+}
 .presentation-title {
   margin: 20px 24px 4px;
 
