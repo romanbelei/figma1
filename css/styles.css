@@ -64,11 +64,16 @@ a {
 .working-list-item:not(:last-child) {
   margin-right: var(--interval);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*Header---------------------------------------------------------------*/
 
 .header {
-  outline: 2px solid springgreen;
+  /* outline: 2px solid springgreen; */
+  border: 1px solid #ececec;
 }
 .header-block {
   display: flex;
@@ -157,8 +162,7 @@ a {
 
 /*section descript---------------------------------------------------*/
 .descript {
-  margin-bottom: 94px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .descript-list {
   display: flex;
@@ -166,7 +170,7 @@ a {
 .descript-item {
   flex-basis: calc(100% / 4);
   justify-content: space-between;
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
 }
 .descript-item:not(:last-child) {
   margin-right: var(--interval);
@@ -193,8 +197,8 @@ a {
 
 /*section working----------------------------------------------------*/
 .working {
-  margin-bottom: 94px;
-  outline: 2px solid green;
+  padding-top: 0px;
+  /* outline: 2px solid green; */
 }
 .working-list {
   display: flex;
@@ -202,13 +206,13 @@ a {
 .working-list-item {
   flex-basis: calc(100% / 3);
   justify-content: space-between;
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
 }
 
 .descript-item {
   flex-basis: calc(100% / 4);
   justify-content: space-between;
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
 }
 
 .working-title {
@@ -225,8 +229,6 @@ a {
 /*section comand-----------------------------------------------------*/
 .comand {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
   /* outline: 2px solid blue; */
 }
 .comand-list {
@@ -270,15 +272,11 @@ a {
 }
 
 /*Page Portfolio+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  outline: 2px solid green;
-}
-.portfolio-list {
+
+.filter-button {
   display: flex;
   justify-content: center;
-  margin: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-list-item:not(:last-child) {
   margin-right: 30px;
@@ -307,10 +305,12 @@ a {
 }
 .presentation-list-item {
   flex-basis: calc((100% / 3) - (var(--interval)));
-  border: 1px solid #eeeeee;
   margin-top: var(--interval);
   margin-left: var(--interval);
   /* outline: 1px solid red; */
+}
+.cards-content {
+  border: 1px solid #eeeeee;
 }
 .presentation-title {
   margin: 20px 24px 4px;
