@@ -111,7 +111,7 @@ li,
   padding: 32px;
   /* background-color: cadetblue; */
 }
-.header .link {
+.header-item-link {
   color: inherit;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -131,7 +131,7 @@ li,
   display: flex;
   align-items: center;
   color: var(--color-text-grey);
-
+}
 /* .header-item::before {
   display: inline-block;
   content: '';
