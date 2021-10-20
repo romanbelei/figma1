@@ -28,13 +28,17 @@
     <header class="header">
       <div class="header__block container">
         <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
-        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="мобільне меню">
             <use class="icon-cross" href="./img/sprite.svg#icon-menu_40px"></use>
-            <use class="icon-menu" href="./img/sprite.svg#icon-close_40px"></use>
           </svg>
         </button>
-        <div class="menu-conteiner" data-menu>
+        <div class="menu-conteiner js-menu-container" id="mobile-menu">
+          <button class="menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="закривання мобільного меню" >
+              <use class="icon-menu" href="./img/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
           <nav class="nav">
             <ul class="nav__list list">
               <li class="nav__item">
@@ -63,6 +67,12 @@
                 +7 777 777 77 77
               </a>
             </li>
+          </ul>
+          <ul class="menu-social-list">
+            <li class="menu-social-item"><a class="menu-social-link" href="">Instagram</a></li>
+            <li class="menu-social-item"><a class="menu-social-link" href="">Twitter</a></li>
+            <li class="menu-social-item"><a class="menu-social-link" href="">Facebook</a></li>
+            <li class="menu-social-item"><a class="menu-social-link" href="">LinkedIn</a></li>
           </ul>
         </div>
       </div>
@@ -510,6 +520,7 @@
       </div>s
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menubutton.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/menubutton.js"></script> -->
   </body>
 </html>

@@ -27,35 +27,47 @@
     <header class="header">
       <div class="header__block container">
         <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link ">Студия</a>
+        <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="мобільне меню">
+            <use class="icon-cross" href="./img/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div class="menu-conteiner js-menu-container" id="mobile-menu">
+          <button class="menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="закривання мобільного меню" >
+              <use class="icon-menu" href="./img/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a class="contack__link" href="tel:+380961111111">
+                <svg class="mail-icon">
+                  <use xlink:href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
+            <li class="contact__item">
+              <a href="tel:+77777777777" class="contack__link">
+                <svg class="phone-icon" >
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                +7 777 777 77 77
+              </a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="contact__list list">
-          <li class="contact__item">
-            <a class="contack__link" href="tel:+380961111111">
-              <svg class="mail-icon" width="16" height="12">
-                <use xlink:href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__list">
-            <a href="tel:+77777777777" class="contack__link">
-              <svg class="phone-icon" width="10" height="16">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-              +7 777 777 77 77
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="section">
@@ -259,5 +271,6 @@
         
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
