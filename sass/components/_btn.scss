@@ -1,0 +1,17 @@
+
+.big-button {
+  background-color: $color-blue;
+  color: $color-white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+

@@ -18,165 +18,111 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мета-тег viewport важен для адаптивных страниц</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body>
     <!--  Шапка -->
     <header class="header">
       <div class="header__block container">
-        <a href="./index.html" class="logo">Web<span class="logo__text-black">Studio</span></a>
-        <nav class="header__nav">
-          <ul class="header__nav-list list">
-            <li class="header__item">
-              <a href="./index.html" class="header__item-link header__item-link--current">Студия</a>
+        <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+          <svg width="40" height="40" aria-label="мобільне меню">
+            <use class="icon-cross" href="./img/sprite.svg#icon-menu_40px"></use>
+            <use class="icon-menu" href="./img/sprite.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="menu-conteiner" data-menu>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a class="contack__link" href="tel:+380961111111">
+                <svg class="mail-icon">
+                  <use xlink:href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__item-link">Портфолио</a>
+            <li class="contact__item">
+              <a href="tel:+77777777777" class="contack__link">
+                <svg class="phone-icon" >
+                  <use href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+                +7 777 777 77 77
+              </a>
             </li>
-            <li class="header__item"><a href="" class="header__item-link">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="header__list list">
-          <li class="header__item">
-            <a class="header__item-link" href="tel:+380961111111">
-              <svg class="mail-icon" width="16" height="12">
-                <use xlink:href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__item">
-            <a href="tel:+77777777777" class="header__item-link">
-              <svg class="phone-icon" width="10" height="16">
-                <use href="./img/sprite.svg#icon-phone"></use>
-              </svg>
-              +7 777 777 77 77
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
       <!--++++++++++++++++++++++++++++++++++      Банер     ++++++++++++++++++++++++++++++++++-->
       <section class="section baner">
-        <h1 class="baner-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="baner-button button" data-modal-open>Заказать услугу</button>
+        <h1 class="baner__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="big-button button" data-modal-open>Заказать услугу</button>
       </section>
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="button-modal-off" data-modal-close>
-            <svg class="modal-icon-close" width="30" height="30">
-              <use xlink:href="./img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <form name="signup_form" autocomplete="on" novalidate>
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="modal-form">
-              <label for="name">Имя</label>
-              <input type="name" class="form-input" name="name" id="name" />
-              <svg class="modal-icon" width="18" height="18">
-                <use xlink:href="./img/sprite.svg#icon-modalperson"></use>
-              </svg>
-            </div>
-
-            <div class="modal-form">
-              <label for="phone">Телефон</label>
-              <input type="tel" class="form-input" name="phone-number" id="phone" />
-              <svg class="modal-icon" width="18" height="18">
-                <use xlink:href="./img/sprite.svg#icon-modalphone"></use>
-              </svg>
-            </div>
-
-            <div class="modal-form">
-              <label for="email">Почта</label>
-              <input type="email" class="form-input" name="email" id="email" />
-              <svg class="modal-icon" width="18" height="18">
-                <use xlink:href="./img/sprite.svg#icon-modalmail"></use>
-              </svg>
-            </div>
-
-            <div class="modal-form">
-              <label for="coments">Коментарий</label>
-              <textarea
-                class="form-input"
-                name="coments"
-                id="coments"
-                rows="8"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-            <div class="modal-form-chek">
-              <label for="checkbox" class="checkbox-text">
-                <input
-                  type="checkbox"
-                  class="modal-checkbox form-input"
-                  name="checkbox"
-                  id="checkbox"
-                />
-                <svg class="modal-chek" width="16" height="15">
-                  <!-- <use xlink:href="./img/sprite.svg#icon-modalcheck"></use> -->
-                  <use xlink:href="./img/sprite.svg#icon-modalcheck"></use>
-                </svg>
-                <span class="checktext">Соглашаюсь с рассылкой и принимаю</span>
-                <a href="" class="modal-chek-span">Условия договора</a>
-              </label>
-            </div>
-            <div class="modal-button">
-              <button type="submit" class="baner-button">Отправить</button>
-            </div>
-          </form>
-        </div>
-      </div>
+      
       <!--++++++++++++++++++++++++++++++++++      Опис      +++++++++++++++++++++++++++++++++++++++-->
       <section class="section descript">
         <h2 class="visually-hidden">Описание</h2>
         <div class="container">
-          <ul class="descript-list list">
-            <li class="descript-item">
-              <div class="descript-beefor">
-                <svg class="descript-icon">
+          <ul class="descript__list list">
+            <li class="descript__item">
+              <div class="descript__beefor">
+                <svg class="descript__icon">
                   <use xlink:href="./img/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="descript-title">Внимание к деталям</h3>
-              <p class="descript-paragraf">
+              <h3 class="descript__title">Внимание к деталям</h3>
+              <p class="descript__paragraf">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="descript-item">
-              <div class="descript-beefor">
-                <svg class="descript-icon">
+            <li class="descript__item">
+              <div class="descript__beefor">
+                <svg class="descript__icon">
                   <use xlink:href="./img/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="descript-title">Пунктуальность</h3>
-              <p class="descript-paragraf">
+              <h3 class="descript__title">Пунктуальность</h3>
+              <p class="descript__paragraf">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="descript-item">
-              <div class="descript-beefor">
-                <svg class="descript-icon">
+            <li class="descript__item">
+              <div class="descript__beefor">
+                <svg class="descript__icon">
                   <use xlink:href="./img/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="descript-title">Планирование</h3>
-              <p class="descript-paragraf">
+              <h3 class="descript__title">Планирование</h3>
+              <p class="descript__paragraf">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
 
-            <li class="descript-item">
-              <div class="descript-beefor">
-                <svg class="descript-icon">
+            <li class="descript__item">
+              <div class="descript__beefor">
+                <svg class="descript__icon">
                   <use xlink:href="./img/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="descript-title">Современные технологии</h3>
-              <p class="descript-paragraf">
+              <h3 class="descript__title">Современные технологии</h3>
+              <p class="descript__paragraf">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -186,26 +132,26 @@
       <!--++++++++++++++++++++++++++++++++++      Чем мы занимаемся      +++++++++++++++++++++++++++++++++++++++-->
       <section class="section working">
         <div class="container">
-          <h2 class="working-title">Чем мы занимаемся</h2>
-          <ul class="working-list list">
-            <li class="working-list-item">
+          <h2 class="working__title">Чем мы занимаемся</h2>
+          <ul class="working__list list">
+            <li class="working__list-item">
               <img src="./img/img1.jpg" alt="Фото розробника для ПК" width="370" height="294" />
-              <div class="working-box-text">
-                <h3 class="working-list-text">Десктопные приложения</h3>
+              <div class="working__box-text">
+                <h3 class="working__list-text">Десктопные приложения</h3>
               </div>
             </li>
 
-            <li class="working-list-item">
+            <li class="working__list-item">
               <img src="./img/img2.jpg" alt="моб. додатки" width="370" height="294" />
-              <div class="working-box-text">
-                <h3 class="working-list-text">Мобильные приложения</h3>
+              <div class="working__box-text">
+                <h3 class="working__list-text">Мобильные приложения</h3>
               </div>
             </li>
 
-            <li class="working-list-item">
+            <li class="working__list-item">
               <img src="./img/img3.jpg" alt="Вебдизайнер" width="370" height="294" />
-              <div class="working-box-text">
-                <h3 class="working-list-text">Дизайнерские решения</h3>
+              <div class="working__box-text">
+                <h3 class="working__list-text">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -214,36 +160,36 @@
       <!--++++++++++++++++++++++++++++++++++      Команда      +++++++++++++++++++++++++++++++++++++++-->
       <section class="section comand">
         <div class="container">
-          <h2 class="comand-title">Наша команда</h2>
-          <ul class="comand-list list">
-            <li class="comand-list-item">
-              <img src="./img/comand1.jpg" alt="Фото Игорь Демьяненко" width="270" height="260" />
-              <div class="comands-content">
-                <h3 class="comand-title-name">Игорь Демьяненко</h3>
-                <p lang="en" class="comand-paragraf">Product Designer</p>
-                <ul class="comand-link">
-                  <li class="comand-link-item">
+          <h2 class="comand__title">Наша команда</h2>
+          <ul class="comand__list list">
+            <li class="comand__list-item">
+              <img src="./img/comand1.jpg" alt="Фото Игорь Демьяненко"  />
+              <div class="comands__content">
+                <h3 class="comand__title-name">Игорь Демьяненко</h3>
+                <p lang="en" class="comand__paragraf">Product Designer</p>
+                <ul class="comand__link">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
@@ -254,34 +200,34 @@
               </div>
             </li>
 
-            <li class="comand-list-item">
-              <img src="./img/comand2.jpg" alt="Фото Ольга Репина" width="270" height="260" />
-              <div class="comands-content">
-                <h3 class="comand-title-name">Ольга Репина</h3>
-                <p lang="en" class="comand-paragraf">Frontend Developer</p>
-                <ul class="comand-link">
-                  <li class="comand-link-item">
+            <li class="comand__list-item">
+              <img src="./img/comand2.jpg" alt="Фото Ольга Репина"  />
+              <div class="comands__content">
+                <h3 class="comand__title-name">Ольга Репина</h3>
+                <p lang="en" class="comand__paragraf">Frontend Developer</p>
+                <ul class="comand__link">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
@@ -292,34 +238,34 @@
               </div>
             </li>
 
-            <li class="comand-list-item">
-              <img src="./img/comand3.jpg" alt="Фото Николай Тарасов" width="270" height="260" />
-              <div class="comands-content">
-                <h3 class="comand-title-name">Николай Тарасов</h3>
-                <p lang="en" class="comand-paragraf">Marketing</p>
-                <ul class="comand-link">
-                  <li class="comand-link-item">
+            <li class="comand__list-item">
+              <img src="./img/comand3.jpg" alt="Фото Николай Тарасов"  />
+              <div class="comands__content">
+                <h3 class="comand__title-name">Николай Тарасов</h3>
+                <p lang="en" class="comand__paragraf">Marketing</p>
+                <ul class="comand__link">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
@@ -330,34 +276,34 @@
               </div>
             </li>
 
-            <li class="comand-list-item">
-              <img src="./img/comand4.jpg" alt="Фото Михаил Ермаков" width="270" height="260" />
-              <div class="comands-content">
-                <h3 class="comand-title-name">Михаил Ермаков</h3>
-                <p lang="en" class="comand-paragraf">UI Designer</p>
-                <ul class="comand-link">
-                  <li class="comand-link-item">
+            <li class="comand__list-item">
+              <img src="./img/comand4.jpg" alt="Фото Михаил Ермаков"  />
+              <div class="comands__content">
+                <h3 class="comand__title-name">Михаил Ермаков</h3>
+                <p lang="en" class="comand__paragraf">UI Designer</p>
+                <ul class="comand__link">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="comand-link-item">
+                  <li class="comand__link-item">
                     <a href="" class="soc-icon-link">
                       <svg class="soc-icon">
                         <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
@@ -371,48 +317,48 @@
         </div>
       </section>
       <!--+++++++++++++++++++++++++++++++++    Постійні клієнти  +++++++++++++++++++++++++++++++++++++-->
-      <section class="section regular-customers">
+      <section class="section regular__customers">
         <div class="container">
-          <h2 class="regular-customers-title">Постоянные клиенты</h2>
-          <ul class="regular-icon">
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+          <h2 class="regular__customers-title">Постоянные клиенты</h2>
+          <ul class="regular__icon">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg  width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg   width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg   width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg   width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg   width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="" class="client-link">
-                <svg class="client-icon" width="106" height="60">
+            <li class="regular__item">
+              <a href="" class="regular__client-link">
+                <svg   width="106" height="60">
                   <use xlink:href="./img/sprite.svg#icon-group6"></use>
                 </svg>
               </a>
@@ -424,8 +370,8 @@
     <!--+++++++++++++++++++++++++++++++++++++++     Підвал      ++++++++++++++++++++++++++++++++++++++-->
     <footer class="footer">
       <div class="container footer__block">
-        <div>
-          <a href="./index.html" class="logo">Web<span class="logo__text-white">Studio</span></a>
+        <div class="footer__block--logolink">
+          <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
           <address>
             <ul class="footer__list">
               <li>
@@ -450,28 +396,28 @@
           <ul class="join__link">
             <li class="join__link-item">
               <a href="" class="soc-icon-link">
-                <svg class="soc-icon join-socc-icon">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__link-item">
               <a href="" class="soc-icon-link">
-                <svg class="soc-icon join-socc-icon">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="join__link-item">
               <a href="" class="soc-icon-link">
-                <svg class="soc-icon join-socc-icon">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="join__link-item">
               <a href="" class="soc-icon-link">
-                <svg class="soc-icon join-socc-icon">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -479,23 +425,91 @@
           </ul>
         </div>
 
-        <div class="footer-form">
+        <div class="footer__form">
           <div>
-            <p class="join-paragraf">Подпишитесь на рассылку</p>
+            <p class="join__paragraf">Подпишитесь на рассылку</p>
             <!-- <label for="email" >Почта</label> -->
             <!-- <div width="358" height="150"> -->
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input class="join-input" type="email" name="email" id="email" placeholder="E-mail" />
             <!-- </div> -->
           </div>
-          <div class="footer-button-box">
-            <button type="submit" class="footer-button baner-button">Подписаться</button>
-            <svg class="footer-send-icon" width="24" height="24">
+        </div>
+          <div class="footer__button-box">
+            <button type="submit" class="footer__button big-button">Подписаться</button>
+            <svg class="footer__send-icon" width="24" height="24">
               <use xlink:href="./img/sprite.svg#icon-iconfootersend"></use>
             </svg>
           </div>
-        </div>
+        
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button-off" data-modal-close>
+          <svg class="modal__icon-close" width="30" height="30">
+            <use xlink:href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form" autocomplete="on" novalidate>
+          <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form__field">
+            <label for="name">Имя</label>
+            <input type="name" class="form__input" name="name" id="name" />
+            <svg class="form__icon" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#icon-modalperson"></use>
+            </svg>
+          </div>
+
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input type="tel" class="form__input" name="phone-number" id="phone" />
+            <svg class="form__icon" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#icon-modalphone"></use>
+            </svg>
+          </div>
+
+          <div class="form__field">
+            <label for="email">Почта</label>
+            <input type="email" class="form__input" name="email" id="email" />
+            <svg class="form__icon" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#icon-modalmail"></use>
+            </svg>
+          </div>
+
+          <div class="form__field">
+            <label for="coments" class="form__label">Коментарий</label>
+            <textarea
+              name="coments"
+              id="coments"
+              cols="30"
+              rows="10"
+              placeholder="Введите текст"
+              class="form__textarea"
+            ></textarea>
+          </div>
+          <div class="form__field-chek">
+            <label for="checkbox" class="checkbox-text">
+              <input
+                type="checkbox"
+                class="form__checkbox form__input"
+                name="checkbox"
+                id="checkbox"
+              />
+              <svg class="form__chek-icon" width="16" height="15">
+                <!-- <use xlink:href="./img/sprite.svg#icon-modalcheck"></use> -->
+                <use xlink:href="./img/sprite.svg#icon-modalcheck"></use>
+              </svg>
+              <span class="checktext">Соглашаюсь с рассылкой и принимаю</span>
+              <a href="" class="form__check-span">Условия договора</a>
+            </label>
+          </div>
+          <div class="modal__button">
+            <button type="submit" class="big-button">Отправить</button>
+          </div>
+        </form>
+      </div>s
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menubutton.js"></script>
   </body>
 </html>

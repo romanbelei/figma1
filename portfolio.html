@@ -18,35 +18,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мета-тег viewport важен для адаптивных страниц</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--  Шапка -->
     <header class="header">
-      <div class="header-block container">
-        <a href="./index.html" class="logo logo-black"><span class="logo-blue">Web</span>Studio</a>
-        <nav class="header-nav">
-          <ul class="header-nav-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-item-link">Студия</a>
+      <div class="header__block container">
+        <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link ">Студия</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-item-link current">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a>
             </li>
-            <li class="header-item"><a href="" class="header-item-link">Контакты</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-item-link" href="tel:+380961111111">
+        <ul class="contact__list list">
+          <li class="contact__item">
+            <a class="contack__link" href="tel:+380961111111">
               <svg class="mail-icon" width="16" height="12">
                 <use xlink:href="./img/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-item">
-            <a href="tel:+77777777777" class="header-item-link">
+          <li class="contact__list">
+            <a href="tel:+77777777777" class="contack__link">
               <svg class="phone-icon" width="10" height="16">
                 <use href="./img/sprite.svg#icon-phone"></use>
               </svg>
@@ -58,30 +60,30 @@
     </header>
     <main class="section">
       <div class="container">
-        <ul class="filter-button list">
-          <li class="portfolio-list-item">
-            <button type="button" class="portfolio-button">Все</button>
+        <ul class="portfolio__list-button list">
+          <li class="portfolio__list-item">
+            <button type="button" class="portfolio__button">Все</button>
           </li>
-          <li class="portfolio-list-item">
-            <button type="button" class="portfolio-button">Веб-сайты</button>
+          <li class="portfolio__list-item">
+            <button type="button" class="portfolio__button">Веб-сайты</button>
           </li>
-          <li class="portfolio-list-item">
-            <button type="button" class="portfolio-button">Приложения</button>
+          <li class="portfolio__list-item">
+            <button type="button" class="portfolio__button">Приложения</button>
           </li>
-          <li class="portfolio-list-item">
-            <button type="button" class="portfolio-button">Дизайн</button>
+          <li class="portfolio__list-item">
+            <button type="button" class="portfolio__button">Дизайн</button>
           </li>
-          <li class="portfolio-list-item">
-            <button type="button" class="portfolio-button">Маркетинг</button>
+          <li class="portfolio__list-item">
+            <button type="button" class="portfolio__button">Маркетинг</button>
           </li>
         </ul>
         <section class="presentation">
           <h2 class="visually-hidden">Презентація</h2>
-          <ul class="presentation-list list">
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <div class="presentation-foto">
-                  <img src="./img/progect1.jpg" alt="ноутбук" width="370" height="294" />
+          <ul class="presentation__list list">
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <div class="presentation__foto">
+                  <img src="./img/progect1.jpg" alt="ноутбук"   />
 
                   <div class="presentation-overlay">
                     <p class="presentation-overlay-text">
@@ -91,89 +93,89 @@
                     </p>
                   </div>
                 </div>
-                <div class="cards-content">
-                  <h3 class="presentation-title">Технокряк</h3>
-                  <p class="presentation-paragraf">Веб-сайт</p>
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Технокряк</h3>
+                  <p class="presentation__paragraf">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect2.jpg" alt="Баскет" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Постер New Orlean vs Golden Star</h3>
-                  <p class="presentation-paragraf">Дизайн</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect2.jpg" alt="Баскет"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="presentation__paragraf">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect3.jpg" alt="Ресторан" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Ресторан Seafood</h3>
-                  <p class="presentation-paragraf">Приложение</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect3.jpg" alt="Ресторан"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Ресторан Seafood</h3>
+                  <p class="presentation__paragraf">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect4.jpg" alt="Навушники" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Проект Prime</h3>
-                  <p class="presentation-paragraf">Маркетинг</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect4.jpg" alt="Навушники"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Проект Prime</h3>
+                  <p class="presentation__paragraf">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect5.jpg" alt="Коробки" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Проект Boxes</h3>
-                  <p class="presentation-paragraf">Приложение</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect5.jpg" alt="Коробки"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Проект Boxes</h3>
+                  <p class="presentation__paragraf">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect6.jpg" alt="Я МАК" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Inspiration has no Borders</h3>
-                  <p class="presentation-paragraf">Веб-сайт</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect6.jpg" alt="Я МАК"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Inspiration has no Borders</h3>
+                  <p class="presentation__paragraf">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect7.jpg" alt="Книжка" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Издание Limited Edition</h3>
-                  <p class="presentation-paragraf">Дизайн</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect7.jpg" alt="Книжка"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Издание Limited Edition</h3>
+                  <p class="presentation__paragraf">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect8.jpg" alt="Маркетинг" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Проект LAB</h3>
-                  <p class="presentation-paragraf">Маркетинг</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect8.jpg" alt="Маркетинг"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Проект LAB</h3>
+                  <p class="presentation__paragraf">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="presentation-list-item">
-              <a href="" class="presentation-card-link">
-                <img src="./img/progect9.jpg" alt="Додатки" width="370" height="294" />
-                <div class="cards-content">
-                  <h3 class="presentation-title">Growing Business</h3>
-                  <p class="presentation-paragraf">Приложение</p>
+            <li class="presentation__list-item">
+              <a href="" class="presentation__card-link">
+                <img src="./img/progect9.jpg" alt="Додатки"   />
+                <div class="presentation__cards">
+                  <h3 class="presentation__title">Growing Business</h3>
+                  <p class="presentation__paragraf">Приложение</p>
                 </div>
               </a>
             </li>
@@ -183,55 +185,55 @@
     </main>
     <!--+++++++++++++++++++++++++++++++++++++++     Підвал      ++++++++++++++++++++++++++++++++++++++-->
     <footer class="footer">
-      <div class="container footer-block">
-        <div>
-          <a href="./index.html" class="logo logo-white"
-            ><span class="logo-blue">Web</span>Studio</a
-          >
+      <div class="container footer__block">
+        <div class="footer__block--logolink">
+          <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
           <address>
-            <ul class="footer-list">
+            <ul class="footer__list">
               <li>
                 <a
                   href="https://goo.gl/maps/J4S7zrF2grUkDUh99"
                   target="blank"
                   rel="noopener noreferrer"
-                  class="footer-address link"
+                  class="footer__address link"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li><a href="mail:info@example.com" class="footer-link link">info@example.com</a></li>
-              <li><a href="tel:+380991111111" class="footer-link link">+380991111111</a></li>
+              <li>
+                <a href="mail:info@example.com" class="footer__link link">info@example.com</a>
+              </li>
+              <li><a href="tel:+380991111111" class="footer__link link">+380991111111</a></li>
             </ul>
           </address>
         </div>
 
         <div class="join">
-          <p class="join-paragraf">присоединяйтесь</p>
-          <ul class="join-link">
-            <li class="join-link-item">
-              <a href="" class="icon-link">
-                <svg class="socc-icon join-socc-icon">
+          <p class="join__paragraf">присоединяйтесь</p>
+          <ul class="join__link">
+            <li class="join__link-item">
+              <a href="" class="soc-icon-link">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-link-item">
-              <a href="" class="icon-link">
-                <svg class="socc-icon join-socc-icon">
+            <li class="join__link-item">
+              <a href="" class="soc-icon-link">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-link-item">
-              <a href="" class="icon-link">
-                <svg class="socc-icon join-socc-icon">
+            <li class="join__link-item">
+              <a href="" class="soc-icon-link">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-link-item">
-              <a href="" class="icon-link">
-                <svg class="socc-icon join-socc-icon">
+            <li class="join__link-item">
+              <a href="" class="soc-icon-link">
+                <svg class="soc-icon footer__socc-icon">
                   <use xlink:href="./img/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -239,21 +241,22 @@
           </ul>
         </div>
 
-        <div class="footer-form">
+        <div class="footer__form">
           <div>
-            <p class="join-paragraf">Подпишитесь на рассылку</p>
+            <p class="join__paragraf">Подпишитесь на рассылку</p>
             <!-- <label for="email" >Почта</label> -->
             <!-- <div width="358" height="150"> -->
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input class="join-input" type="email" name="email" id="email" placeholder="E-mail" />
             <!-- </div> -->
           </div>
-          <div class="footer-button-box">
-            <button type="submit" class="footer-button baner-button">Подписаться</button>
-            <svg class="footer-send-icon" width="24" height="24">
+        </div>
+          <div class="footer__button-box">
+            <button type="submit" class="footer__button big-button">Подписаться</button>
+            <svg class="footer__send-icon" width="24" height="24">
               <use xlink:href="./img/sprite.svg#icon-iconfootersend"></use>
             </svg>
           </div>
-        </div>
+        
       </div>
     </footer>
   </body>

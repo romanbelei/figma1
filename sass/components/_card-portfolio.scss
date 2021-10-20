@@ -1,0 +1,74 @@
+.presentation {
+  // margin-top: $interval;
+  // margin-left: $interval;
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
+}
+.presentation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.presentation__list-item {
+  @media screen and (min-width:768px) {
+    flex-basis: calc((100% / 2) - 30px);
+  }
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% / 3) - 30px);
+  }
+  margin-top: $interval;
+  margin-left: $interval;
+  &:hover .presentation-overlay {
+    transform: translateY(-100%);
+  }
+}
+.presentation__cards{
+  border-left: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 20px 24px;
+}
+.presentation__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+
+}
+.presentation__paragraf {
+  margin-bottom: 4;
+  font-size: 16px;
+  line-height: 1.88;
+  color: $color-text-grey;
+}
+
+.presentation__card-link {
+  display: block;
+  box-sizing: border-box;
+  transition: box-shadow $primary-transition;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.presentation__foto {
+  position: relative;
+  overflow: hidden;
+}
+.presentation-overlay {
+  position: absolute;
+  transition: transform $primary-transition;
+}
+.presentation-overlay-text {
+  background-color: $color-blue;
+  // width: 370px;
+  // height: 294px;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #ffffff;
+  padding: 63px 24px;
+}
+
