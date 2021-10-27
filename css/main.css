@@ -489,19 +489,19 @@ li,
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .baner {
-    background-image: url(../img/mobile/banner@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/banner@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .baner {
-    background-image: url(../img/tablet/banner.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/banner.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .baner {
-    background-image: url(../img/tablet/banner@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/banner@2x.jpg);
   }
 }
 
@@ -510,13 +510,13 @@ li,
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../img/desctop/banner.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desctop/banner.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .baner {
-    background-image: url(../img/desctop/banner@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desctop/banner@2x.jpg);
   }
 }
 
@@ -1242,7 +1242,7 @@ address {
 }
 
 .portfolio__list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .portfolio__button {
