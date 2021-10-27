@@ -11,7 +11,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-} // Щоб вставити використовувати нижче
+}
+  @mixin font($fz, $fw, $lh) {
+   font-size: $fz;
+   font-weight: $fw;
+   line-height: $lh;
+  }
+
+ // Щоб вставити використовувати нижче
+
+ // @include font(14px, 700, 1.17);
 
 // @include centerflex();
 

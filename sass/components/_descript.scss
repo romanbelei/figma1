@@ -1,3 +1,8 @@
+.descript {
+  padding-bottom: 0;
+}
+
+
 .descript__list {
   @media screen and (min-width:768px) {
   display: flex;
@@ -50,7 +55,7 @@
   padding-bottom: 0;
   line-height: 1.7;
   text-align: left;
-  @media screen and (min-width:480px) {
-    margin-bottom: 30px;
-  }
+  // @media screen and (min-width:480px) {
+    // margin-bottom: 30px;
+  // }
 }
