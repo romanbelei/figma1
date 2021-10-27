@@ -8,14 +8,7 @@
   align-items: center;
   height: 80px;
 }
-.nav {
-  @media screen and (min-width:768px){
-    margin-left: 93px;
-  }
-  @media screen and (min-width:768px) and (max-width:1200px) {
-    margin-left: 88px;
-   }
-}
+
 .nav__list {
   display: block;
   text-align: start;
@@ -210,6 +203,7 @@
   background-color:white;
   height: 100vh;
   width: 100vw;
+  // margin-left: 88px;
   padding: 10px 15px 48px 40px;
   text-align: center;
   font-size: 20px;
@@ -228,10 +222,12 @@
    flex-grow: 1;
    justify-content: flex-start;
    align-items: center;
+   margin-left: 88px;
   }
   @media screen and (min-width:1200px) {
     display: flex;
     flex-grow: 1;
+    margin-left: 93px;
    }
 }
 .menu-social-list {

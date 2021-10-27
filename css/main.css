@@ -111,18 +111,6 @@ li,
   height: 80px;
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    margin-left: 93px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .nav {
-    margin-left: 88px;
-  }
-}
-
 .nav__list {
   display: block;
   text-align: start;
@@ -392,6 +380,7 @@ li,
     flex-grow: 1;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 88px;
   }
 }
 
@@ -399,6 +388,7 @@ li,
   .menu-conteiner {
     display: flex;
     flex-grow: 1;
+    margin-left: 93px;
   }
 }
 
