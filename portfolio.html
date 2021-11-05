@@ -384,9 +384,10 @@
     <!--+++++++++++++++++++++++++++++++++++++++     Підвал      ++++++++++++++++++++++++++++++++++++++-->
     <footer class="footer">
       <div class="container footer__block">
+       <div class="wrapper"> 
         <div class="footer__block--logolink">
-          <a href="./index.html" class="logo">Web<span class="logo-white">Studio</span></a>
-          <address>
+          <a href="./index.html" class="footer__logo logo">Web<span class="logo-white">Studio</span></a>
+          <address class="address">
             <ul class="footer__list">
               <li>
                 <a
@@ -404,7 +405,6 @@
             </ul>
           </address>
         </div>
-
         <div class="join">
           <p class="join__paragraf">присоединяйтесь</p>
           <ul class="join__link">
@@ -438,24 +438,19 @@
             </li>
           </ul>
         </div>
-
-        <div class="footer__form">
-          <div>
-            <p class="join__paragraf">Подпишитесь на рассылку</p>
-            <!-- <label for="email" >Почта</label> -->
-            <!-- <div width="358" height="150"> -->
-            <input class="join-input" type="email" name="email" id="email" placeholder="E-mail" />
-            <!-- </div> -->
-          </div>
-        </div>
-          <div class="footer__button-box">
-            <button type="submit" class="footer__button big-button">Подписаться</button>
-            <svg class="footer__send-icon" width="24" height="24">
-              <use xlink:href="./img/sprite.svg#icon-iconfootersend"></use>
-            </svg>
-          </div>
-        
       </div>
+        <form class="footer__form">
+          <strong class="footer__form-paragraf">Подпишитесь на рассылку</strong>
+          <div class="join__block">
+            <input class="join-input" type="email" name="email" id="email" placeholder="E-mail" />
+            <button type="submit" class="footer__button">
+              Подписаться
+              <svg class="footer__send-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-iconfootersend"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
     </footer>
     <script src="./js/mobile-menu.js"></script>
   </body>

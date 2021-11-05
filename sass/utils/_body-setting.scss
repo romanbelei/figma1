@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  overflow-y: scroll;
 }
 img {
   display: block;
@@ -38,6 +39,7 @@ li,
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   @media screen and (min-width:480px) {
     width: 480px;
   }

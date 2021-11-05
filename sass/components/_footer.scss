@@ -6,35 +6,33 @@
   text-align: left;
 }
 .footer__block {
-  @media screen and (max-width:767px) {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    }
-  @media screen and (min-width:768px) {
+    align-items: baseline;
+    text-align: left;
+  }
+}
+// обгортка лого + аддрес
+.wrapper {
+  @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-  @media screen and (min-width:1200px) {
-  display: flex;
-  align-items: center;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 .footer__block--logolink{
-  @media screen and (max-width:768px){
-    width: 100%;
-  }
-  // justify-content: center;
-  @media screen and (max-width:1200px) {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  }
+  display: block;
 }
-
-address {
+.footer__logo{
+  @media screen and (max-width: 767px) {
+  font-size: 24px;
+}
+}
+.address {
   font-style: inherit;
 }
 .footer__link {
@@ -45,29 +43,24 @@ address {
   color: $color-white;
 }
 .footer__list:first-child {
-  margin-bottom: 6px;
+  margin-top: 20px;
 }
-.footer__list:last-child {
-  margin-top: 6px;
-}
+
+
+// Приєднуйтесь + соцмережі
 .join {
-  @media screen and (min-width:768px) and (max-width:1200px) {
-    margin-left: 165px;
-    padding-top: 15px;
-    }
-  @media screen and (max-width:768px) {
-   margin-top: 60px;
-  }
-  @media screen and (max-width:1200px) {
-    display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
-  // justify-content: center;
+  @media screen and (max-width:768px) {
+    margin-top: 60px;
   }
+  @media screen and (min-width:768px) and (max-width:1200px) {
+    padding-top: 15px;
+    }
   @media screen and (min-width:1200px) {
   margin-left: 70px;
-  position: relative;
-  top:-3px;
+  text-align-last: left;
   }
 }
 .join__paragraf {
@@ -77,6 +70,22 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
 }
+.footer__form-paragraf {
+  display: block;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  @media screen and (max-width:1199px) {
+    text-align: center;
+  }
+}
+.join__link {
+  display: flex;
+  justify-content: center;
+}
 .join__link-item {
   background-color: #44454e;
   box-sizing: 44px;
@@ -85,17 +94,34 @@ address {
   margin-right: 10px;
   }
 }
-.join__link {
-  display: flex;
-  @media screen and (max-width:1200px) {
-  justify-content: center;
+.footer__socc-icon {
+  fill: white;
 }
+
+// Подпишитесь на рассылку інпут + кнопка
+.footer__form {
+  @media screen and(max-width:1199px) {
+    @include Margin-L-R-auto;
+    margin-top: 60px;
+}
+@media screen and(min-width:1199px) {
+  margin-left: 93px;
+}
+}
+.join__block {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .join-input {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 14px;
+  margin-bottom: 20px;
   color: #ffffff;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,62 +133,35 @@ address {
   &:focus {
     border: 1px solid #2196f3;
   }
-}
-
-
-.footer__socc-icon {
-  fill: white;
-}
-.footer__form {
-  @media screen and (max-width:768px) {
-  text-align: center;
-  margin-top: 60px;
-  }
-  @media screen and (min-width:768px) and (max-width:1200px) {
-    text-align: center;
-    width: 100%;
-    margin-top: 60px;
-    }
-  @media screen and (min-width:1200px) {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 14px;
   }
 }
-.footer-form input {
-  background-color: #2f303a;
-  width: 358px;
+.footer__button {
+  @include centerflex;
+  background: $color-blue;
+  width: 200px;
   height: 50px;
-  font-size: 16px;
-  line-height: 1.25;
-  padding-left: 16px;
-  border: 1px solid rgb(109, 110, 117);
+  padding: 10px 27px;
   border-radius: 4px;
-}
-.footer__button-box {
-  position: relative;
-  // display: block;
-  @media screen and (max-width:1200px) {
-    // display: flex;
-    // flex-direction: column;
-    // text-align: center;
-    // justify-content: center;
-    margin-top: 20px;
-    }
-  @media screen and (min-width:1200px) {
-  
-  top: 18px;
-  margin-left: 12px;
+  border: none;
+  cursor: pointer;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 .footer__send-icon {
-  position: absolute;
-  bottom: 13px;
-  right: 28px;
   fill: white;
+  margin-left: 10px;
 }
-.footer__button {
-  
-  text-align: start;
-  padding-left: 28px;
-}
-
-
