@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Figma1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>Figma2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -27,65 +24,47 @@
     <!--  Шапка -->
     <header class="header">
       <div class="header__block container">
-        <a href="./index.html" class="logo">Web<span class="logo-black">Studio</span></a>
+        
+          <img width="199" height="50" srcset="./image/sprite/logo 1x.png, ./image/sprite/logo 2x.png" src="./image/sprite/logo 1x.png" alt="Логотип"/>
+        
         <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="мобільне меню">
             <use class="icon-cross" href="./img/sprite.svg#icon-menu_40px"></use>
           </svg>
         </button>
         <div class="menu-conteiner js-menu-container" id="mobile-menu">
-          <button class="menu-button js-close-menu">
+          
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item"><a href="" class="nav__link nav__link--current">Home</a></li>
+              <li class="nav__item"><a href="" class="nav__link">About us</a></li>
+              <li class="nav__item"><a href="" class="nav__link">How it’s made?</a></li>
+              <li class="nav__item"><a href="" class="nav__link">Our products</a></li>
+              <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <button class="header__button big-button button" data-modal-open>Buy now</button>
+          </div>
+          
+          <button class="menu-button menu-button-close js-close-menu">
             <svg width="40" height="40" aria-label="закривання мобільного меню" >
               <use class="icon-menu" href="./img/sprite.svg#icon-close_40px"></use>
             </svg>
           </button>
-          <nav class="nav">
-            <ul class="nav__list list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link nav__link--current">Студия</a>
-              </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфолио</a>
-              </li>
-              <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="contact__list list">
-            <li class="contact__item">
-              <a class="contack__link" href="tel:+380961111111">
-                <svg class="mail-icon">
-                  <use xlink:href="./img/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contact__item">
-              <a href="tel:+77777777777" class="contack__link">
-                <svg class="phone-icon" >
-                  <use href="./img/sprite.svg#icon-phone"></use>
-                </svg>
-                +7 777 777 77 77
-              </a>
-            </li>
-          </ul>
-          <ul class="menu-social-list">
-            <li class="menu-social-item"><a class="menu-social-link" href="">Instagram</a></li>
-            <li class="menu-social-item"><a class="menu-social-link" href="">Twitter</a></li>
-            <li class="menu-social-item"><a class="menu-social-link" href="">Facebook</a></li>
-            <li class="menu-social-item"><a class="menu-social-link" href="">LinkedIn</a></li>
-          </ul>
         </div>
+        <button class="header__button-tablet big-button button" data-modal-open>Buy now</button>
       </div>
     </header>
     <main>
       <!--++++++++++++++++++++++++++++++++++      Банер     ++++++++++++++++++++++++++++++++++-->
-      <section class="section baner">
+      <!-- <section class="section baner">
         <h1 class="baner__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="big-button button" data-modal-open>Заказать услугу</button>
-      </section>
+      </section> -->
       
       <!--++++++++++++++++++++++++++++++++++      Опис      +++++++++++++++++++++++++++++++++++++++-->
-      <section class="section descript">
+      <!-- <section class="section descript">
         <h2 class="visually-hidden">Описание</h2>
         <div class="container">
           <ul class="descript__list list">
@@ -138,9 +117,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--++++++++++++++++++++++++++++++++++      Чем мы занимаемся      +++++++++++++++++++++++++++++++++++++++-->
-      <section class="section working">
+      <!-- <section class="section working">
         <div class="container">
           <h2 class="working__title">Чем мы занимаемся</h2>
           <ul class="working__list list">
@@ -167,9 +146,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--++++++++++++++++++++++++++++++++++      Команда      +++++++++++++++++++++++++++++++++++++++-->
-      <section class="section comand">
+      <!-- <section class="section comand">
         <div class="container">
           <h2 class="comand__title">Наша команда</h2>
           <ul class="comand__list list">
@@ -406,9 +385,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--+++++++++++++++++++++++++++++++++    Постійні клієнти  +++++++++++++++++++++++++++++++++++++-->
-      <section class="section regular__customers">
+      <!-- <section class="section regular__customers">
         <div class="container">
           <h2 class="regular__customers-title">Постоянные клиенты</h2>
           <ul class="regular__icon">
@@ -462,10 +441,10 @@
 
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--+++++++++++++++++++++++++++++++++++++++     Підвал      ++++++++++++++++++++++++++++++++++++++-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__block">
        <div class="wrapper"> 
         <div class="footer__block--logolink">
@@ -534,7 +513,7 @@
             </button>
           </div>
         </form>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-off" data-modal-close>

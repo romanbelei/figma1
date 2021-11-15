@@ -5,11 +5,11 @@
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
-  &-black {
-    color: $color-black;
+  margin-left: 20px; 
+  @media screen and (min-width: 768px){
+    margin-left: 34px; 
+   }
+  @media screen and (min-width: 1200px){
+    margin-left: 46px; 
   }
-  
-  &-white {
-    color: $color-white;
   }
-}
